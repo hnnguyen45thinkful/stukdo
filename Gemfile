@@ -32,6 +32,15 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+group :development, :test do
+	gem 'spring'
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'rails_12factor'
+	gem 'pg'
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
