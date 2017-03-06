@@ -1,4 +1,5 @@
-# yourapp/app/models/task.rb<br>class Task < ActiveRecord::Base
+# yourapp/app/models/task.rb
+class Task < ActiveRecord::Base
 	belongs_to :user
 
 	validates :user_id, presence: true
